@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #819A91;
+}
+
+/* PYQ page (main) */
+
+.pyq-main {
+    padding: 68px 6%;
+}
+
+.pyq-text {
+    color: white;
+    margin: 0 auto;
+    max-width: 1000px;
+    transition: all .50s ease;
+}
+
+.pyq-text h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    color: white;
+}
+
+.pyq-text p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.pyq-content {
+    padding: 68px 0;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    transition: all .50s ease;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px -2px #bebebe;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+    height: 7em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: linear-gradient(#d9f3e4, #b4e2d4);
+    display: flex;
+    align-items: top;
+    justify-content: right;
+}
+
+.save {
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save .svg {
+    transition: 0.2s ease-in-out;
+    width: 15px;
+    height: 15px;
+}
+
+.save:hover .svg {
+    fill: #ced8de;
+}
+
+.text {
+    padding: 7px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.text .h3 {
+    font-family: system-ui;
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.text .p {
+    font-family: system-ui;
+    color: #999999;
+    font-size: 13px;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+}
+
+.icon-box {
+    margin: 10px;
+    padding: 12px;
+    background-color: #1DCD9F;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.icon-box:active {
+    background-color: #169976;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+.icon-box .span {
+    font-family: system-ui;
+    font-size: small;
+    font-weight: 500;
+    color: #fff;
+}
+
+@media (max-width:1280px) {
+    .pyq-text {
+        max-width: 800px;
+    }
+    .pyq-content {
+        max-width: 900px;
+    }
+    .pyq-text h1 {
+        font-size: 3rem;
+    }
+    .pyq-text p {
+        font-size: 1.5rem;
+    }
+    .pyq-content {
+        gap: 25px;
+    }
+    .card {
+        width: 250px;
+    }
+}
+
+@media (max-width:900px) {
+    .pyq-text  {
+        max-width: 520px;
+    }
+    .pyq-content {
+        max-width: 620px;
+    }
+    .pyq-text h1 {
+        font-size: 2rem;
+    }
+    .pyq-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:480px) {
+    .pyq-main {
+        padding: 28px 3%;
+    }
+    .pyq-text {
+        max-width: 320px;
+    }
+    .pyq-content {
+        max-width: 400px;
+        padding: 48px 3%;
+    }
+    .pyq-text h1 {
+        font-size: 1.5rem;
+    }
+    .pyq-text p {
+        font-size: 0.7rem;
+    }
+    .card {
+        width: 150px;
+    }
+    .img {
+        height: 5em;
+    }
+}
+
+@media (max-width:390px) {
+    .pyq-text {
+        max-width: 310px;
+    }
+    .pyq-content {
+        gap: 15px;
+    }
+}
+
+/* PYQ page (class h6) */
+
+.class-h6 {
+    position: absolute;
+    bottom: 0%;
+    height: 15vh;
+    width: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.class-h6 h6 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@media (max-width:1670px) {
+    .class-h6 h6 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1470px) {
+    .class-h6 h6 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:1132px) {
+    .class-h6 {
+        width: 100px;
+    }
+    .class-h6 h6 {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:850px) {
+    .class-h6 {
+        display: none;
+    }
+}
+
+/* Teacher info. page */
+
+.page404 {
+    position: fixed;
+    background-color: #7D0A0A;
+    width: 100%;
+    height: 100vh;
+}
+
+.txt404 {
+    height: 10vh;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.img404 {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img404 img {
+    width: 700px;
+}
+
+@media (max-width:1280px) {
+    .img404 img {
+        width: 500px;
+    }
+}
+
+@media (max-width:900px) {
+    .txt404 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:600px) {
+    .txt404 {
+        font-size: 2.5rem;
+    }
+    .img404 img {
+        width: 400px;
+    }
+}
+
+@media (max-width:480px) {
+    .txt404 {
+        font-size: 2rem;
+    }
+    .img404 img {
+        width: 300px;
+    }
+}
